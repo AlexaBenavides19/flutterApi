@@ -38,7 +38,7 @@ class _InsertarUsuariosState extends State<InsertarUsuarios> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Categoría insertada correctamente'),
-            backgroundColor: Colors.green,
+            backgroundColor: Color.fromARGB(255, 243, 9, 99),
           ),
         );
         // Puedes agregar aquí alguna acción adicional después de la inserción

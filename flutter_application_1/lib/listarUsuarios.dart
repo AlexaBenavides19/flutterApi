@@ -276,13 +276,17 @@ Future<void> mostrarDialogoEditar(Map<String, dynamic> categoria) async {
                   child: ExpansionTile(
                     title: Row(
                       children: [
-                        Icon(Icons.info_outline,
+                        Icon(Icons.supervised_user_circle_outlined,
                             color: Color.fromARGB(255, 240, 110, 190)),
                         SizedBox(width: 8),
-                        Text('ID: ${filteredData[index]['id'] ?? 'ID no disponible'}'),
+                        Text('Categoria: ${filteredData[index]['categoria'] ?? 'categoria no disponible'}'),
                       ],
                     ),
                     children: [
+                      ListTile(
+                        title: Text(
+                            'ID: ${filteredData[index]['id'] ?? 'ID no disponible'}'),
+                      ),
                       ListTile(
                         title: Text(
                             'Categoría: ${filteredData[index]['categoria'] ?? 'No disponible'}'),
